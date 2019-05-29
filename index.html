@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
     <title>Numbers</title>
     <link rel="icon" href="logo.svg" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
@@ -13,7 +14,7 @@
         <div class="random">
                 <h1>Numbers</h1>
                 <div class="head-fact">
-                    <h3>Did You Know ?</h3>
+                    <h2>Did You Know ?</h2>
                     <p id="trivia"></p>
                 </div>
         </div>
@@ -35,6 +36,7 @@
         
         <div class="tab-content">
             <div class="content active-c">
+                <span>Get an interesting fact about any number!!</span>
                 <input id="num" type="number" placeholder="Enter the number...">
                 <div class="facts">
                     <h3>Number Fact:</h3>
@@ -43,15 +45,19 @@
                 
             </div>
             <div class="content">
-                    <input id="month" type="number" min="1" max="12" placeholder="1">
-                    <input id="date" type="number" min="1" max="31" value="1">
-                    <div class="facts">
-                        Date Fact:
-                        <p id="dateFact"></p>
-                    </div>
+                <span>Interesting fact about any day of the year!!</span>
+                <div class="md">
+                    <input id="month" type="number" min="1" max="12" placeholder="Month">
+                    <input id="date" type="number" min="1" max="31" placeholder="Day">    
+                </div>
+                <div class="facts">
+                    Date Fact:
+                    <p id="dateFact"></p>
+                </div>
             </div>
             <div class="content">
-                <input id="year" type="number" min="1900" max="2099" step="1"/>
+                    <span>Interesting fact about a particular year!!</span>
+                <input id="year" type="number" min="1900" max="2099" step="1" placeholder="Year"/>
                 <div class="facts">
                 Year Fact:
                 <p id="yearFact"></p>
@@ -69,6 +75,7 @@
         tab[i].addEventListener("click",() => {
             tab[i].classList.add("active");
             content[i].classList.add("active-c");
+            content[i].style.animation = "move 0.5s ease";
 
             for(let j=0;j< tab.length;j++){
                 if(j != i){
@@ -79,6 +86,6 @@
         })
     }
 </script>
-<script src="main.js"></script>      
+<script src="main.js"></script>
 </body>
 </html>
