@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Numbers</title>
+    <link rel="icon" href="logo.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="random">
+                <h1>Numbers</h1>
+                <div class="head-fact">
+                    <h3>Did You Know ?</h3>
+                    <p id="trivia"></p>
+                </div>
+        </div>
+        
+        <div class="tabs">
+            <div class="tab active">
+                <img src="num.svg" alt="num" width="50">
+                <p>Number</p>
+            </div>
+            <div class="tab">
+                <img src="date.svg" alt="" width="50">
+                <p>Date</p>
+            </div>
+            <div class="tab">
+                <img src="year.svg" alt="year" width="50">
+                <p>Year</p>
+            </div>
+        </div>
+        
+        <div class="tab-content">
+            <div class="content active-c">
+                <input id="num" type="number" placeholder="Enter the number...">
+                <div class="facts">
+                    <h3>Number Fact:</h3>
+                    <p id="fact"></p>
+                </div>
+                
+            </div>
+            <div class="content">
+                    <input id="month" type="number" min="1" max="12" placeholder="1">
+                    <input id="date" type="number" min="1" max="31" value="1">
+                    <div class="facts">
+                        Date Fact:
+                        <p id="dateFact"></p>
+                    </div>
+            </div>
+            <div class="content">
+                <input id="year" type="number" min="1900" max="2099" step="1"/>
+                <div class="facts">
+                Year Fact:
+                <p id="yearFact"></p>
+                </div>
+            </div>
+        </div>      
+        <div class="footer">
+            Footer
+        </div>
+<script>  
+    var tab = document.querySelectorAll(".tab");
+    var content = document.querySelectorAll(".content");
+
+    for (let i = 0; i < tab.length; i++){
+        tab[i].addEventListener("click",() => {
+            tab[i].classList.add("active");
+            content[i].classList.add("active-c");
+
+            for(let j=0;j< tab.length;j++){
+                if(j != i){
+                    tab[j].classList.remove("active");
+                    content[j].classList.remove("active-c");
+                }
+            }
+        })
+    }
+</script>
+<script src="main.js"></script>      
+</body>
+</html>
