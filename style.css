@@ -5,14 +5,36 @@
     font-family: 'Karla', sans-serif;
     overflow-x: hidden;
 }
-.random{
+.header{
     background: url("num.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 85vh;
+    position: absolute;
+    filter: contrast(0.4);
+    background-attachment: fixed;
+}
+.random{  
     padding: 30px 0; 
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 72vh;
+    z-index: 99;
+    background: transparent;
+    overflow: hidden;
+}
+.logo{
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+    min-width: 350px;
+    padding: 10px;
+    color: rgb(85, 10, 16);
+    border-radius: 10px;
+    z-index: 2;
+    font-family: 'Rancho',cursive;
+    font-size: 5em;
 }
 .head-fact{
     min-height: 250px;
@@ -24,6 +46,7 @@
     display: flex;
     justify-content: space-evenly;
     padding-top: 15px;
+    z-index: 10;
     color: white;
 }
 .head-fact p{
@@ -38,18 +61,19 @@
     border-radius: 5px;
     padding-top: 30px;
     font-size: 1.5rem;
-    line-height: 1.5;
+    line-height: 1.3;
     box-shadow: 0px 0px 5px 3px darkslategray inset;
 }
 .tabs{
     width: 100%;
-    height: 20vh;
+    min-height: 20vh;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background: #d3e3fc;
-    color: black;
+    background: #38b17e;
+    color: rgb(8, 40, 46);
+    font-size: 19px;
     box-shadow: 0.5px 0px 2px black inset;
 }
 .tab{
@@ -75,12 +99,31 @@ input[type="number"]{
 }
 .tab-content{
     padding: 20px 0;
-    background: #f4e4c1;    
+    background: rgb(146, 196, 216);    
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    height: 74vh;
+    min-height: 74vh;
+}
+.share{
+    margin-top: 25px;
+    display: flex;
+    font-size: 2em;
+}
+.share a{
+    text-decoration: none;
+}
+.sh{
+    padding: 3px;
+    overflow: hidden;
+    border-radius: 3px;
+    margin-left: 15px;
+}
+.whats a{
+    color: white;
+    text-decoration: none;
 }
 .content{
     display: none;
@@ -123,7 +166,7 @@ input:focus{
     background: whitesmoke;
     padding: 20px;
     width: 75%;
-    height: 50%;
+    min-height: 50%;
     line-height: 1.5;
     font-size: 1.2rem;
     overflow: hidden;
@@ -141,9 +184,17 @@ input:focus{
     width: 40%;
 }
 .footer{
-    height: 40px;
-    background: rgb(11, 141, 145);
-    padding-top: 10px;
+    height: 30px;
+    background: rgb(29, 14, 83);
+    display: flex;
+    justify-content: center;
+    padding:5 15px;
+    align-items: center;
+}
+.contact a{
+    margin-left: 5vw;
+    text-decoration: none;
+    color: #DDDDDD;
 }
 @media screen and (max-width:600px){
     .active-c{
@@ -160,5 +211,12 @@ input:focus{
         padding: 10px;
         padding-top: 30px;
         font-size: 1.2rem;
+    }
+    .logo{
+        min-height: 10vh;
+        min-width: 250px;
+        overflow: hidden;
+        top: 0;
+        font-size: 3rem;
     }
 }
