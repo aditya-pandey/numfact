@@ -122,14 +122,14 @@ input[type="number"]{
     border-radius: 3px;
     margin-left: 15px;
 }
-.share.t a i{
-   color:#38A1F3;  
+.t a{
+    color: #38A1F3;
 }
-.share.f a i{
-   color:#4267B2;  
+.f a{
+    color: #3b5998;
 }
-.share.w a i{
-   color:#4FCE5D;
+.w a{
+    color: #33CC66;
 }
 
 .content{
