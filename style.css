@@ -115,16 +115,23 @@ input[type="number"]{
 .share a{
     text-decoration: none;
 }
+
 .sh{
     padding: 3px;
     overflow: hidden;
     border-radius: 3px;
     margin-left: 15px;
 }
-.whats a{
-    color: white;
-    text-decoration: none;
+.share.t{
+   color:#38A1F3;  
 }
+.share.f{
+   color:#4267B2;  
+}
+.share.w{
+   color:#4FCE5D;  
+}
+
 .content{
     display: none;
 }
