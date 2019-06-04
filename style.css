@@ -115,7 +115,6 @@ input[type="number"]{
 .share a{
     text-decoration: none;
 }
-
 .sh{
     padding: 3px;
     overflow: hidden;
@@ -131,7 +130,6 @@ input[type="number"]{
 .w a{
     color: #33CC66;
 }
-
 .content{
     display: none;
 }

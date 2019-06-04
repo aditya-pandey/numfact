@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "title": "Armed Police Force Club v Gandaki Province",
+            "description": "Armed Police Force Club v Gandaki Province",
+            "unique_id": "1185274"
+        },
+        {
+            "title": "Province Number 1 67/2 * v Karnali Province",
+            "description": "Province Number 1 67/2 * v Karnali Province",
+            "unique_id": "1185273"
+        },
+        {
+            "title": "India A 2/2 * v Sri Lanka A",
+            "description": "India A 2/2 * v Sri Lanka A",
+            "unique_id": "1183601"
+        },
+        {
+            "title": "Sri Lanka Under-19s v Pakistan Under-19s",
+            "description": "Sri Lanka Under-19s v Pakistan Under-19s",
+            "unique_id": "1184911"
+        },
+        {
+            "title": "Pakistan v West Indies",
+            "description": "Pakistan v West Indies",
+            "unique_id": "1144484"
+        },
+        {
+            "title": "Guernsey v Jersey",
+            "description": "Guernsey v Jersey",
+            "unique_id": "1185200"
+        },
+        {
+            "title": "Guernsey Women v Jersey Women",
+            "description": "Guernsey Women v Jersey Women",
+            "unique_id": "1185208"
+        }
+    ],
+    "cache": false,
+    "v": "1",
+    "ttl": 361,
+    "provider": {
+        "source": "Various",
+        "url": "https://cricapi.com/",
+        "pubDate": "2019-05-31T05:19:03.921Z"
+    },
+    "creditsLeft": 250
+}

@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel = "icon" href ="logo.ico" type = "image/x-icon">
     <title>Numbers</title>
+    <link rel = "icon" href ="logo.ico" type = "image/x-icon"> 
     <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rancho&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -44,7 +43,7 @@
     <div class="tab-content">
         <div class="content active-c">
             <span>Get an interesting fact about any number!!</span>
-            <input id="num" type="number" placeholder="Enter the number...">
+            <input id="num" type="number" min="0"  placeholder="Enter the number...">
             <div class="facts">
                 <h3>Number Fact:</h3>
                 <p id="fact"></p>
@@ -54,8 +53,8 @@
         <div class="content">
             <span>Interesting fact about any day of the year!!</span>
             <div class="md">
-                <input id="month" type="number" min="1" max="12" placeholder="Month">
-                <input id="date" type="number" min="1" max="31" placeholder="Day">
+                <input id="month" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="2" type="number" min="1" max="12" placeholder="Month">
+                <input id="date" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="2" type="number" min="1" max="31" placeholder="Day">
             </div>
             <div class="facts">
                 Date Fact:
@@ -64,7 +63,7 @@
         </div>
         <div class="content">
             <span>Interesting fact about a particular year!!</span>
-            <input id="year" type="number" min="1900" max="2099" step="1" placeholder="Year" />
+            <input id="year" type="number" min="1900" max="2099" step="1" placeholder="Year" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="4"/>
             <div class="facts">
                 Year Fact:
                 <p id="yearFact"></p>
@@ -111,7 +110,7 @@
             })
         }
     </script>
-   <script src="main.js"></script>
+   <script src="fact.js"></script>
 </body>
 
 </html>
